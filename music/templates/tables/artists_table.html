@@ -1,0 +1,10 @@
+<table>
+<caption>Таблица исполнителей</caption>
+<tr>
+    <th>id</th>
+    <th>Исполнитель</th>
+</tr>
+    {% for artist in artists_list %}
+        <tr><td>{{artist.id}}</td><td>{{artist.name}}</td></tr>
+    {% endfor %}
+</table>

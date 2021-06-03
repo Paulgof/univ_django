@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="../static/beauty_table.css">
+</head>
+<body>
+
+<h2>Исполнители</h2>
+<div class="table-wrapper">
+    {% include "tables/artists_table.html" %}
+</div>
+<h2>Альбомы</h2>
+<div class="table-wrapper">
+    {% include "tables/albums_table.html" %}
+</div>
+<h2>Треки</h2>
+<div class="table-wrapper">
+    {% include "tables/tracks_table.html" %}
+</div>
+</body>
+</html>

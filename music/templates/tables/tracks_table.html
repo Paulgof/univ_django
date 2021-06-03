@@ -1,0 +1,19 @@
+<table>
+<caption>Таблица треков</caption>
+<tr>
+    <th>id</th>
+    <th>Трек</th>
+    <th>Продолжительность</th>
+    <th>Исполнитель</th>
+    <th>Альбом</th>
+</tr>
+    {% for track in tracks_list %}
+    <tr>
+        <td>{{ track.id }}</td>
+        <td>{{ track.name }}</td>
+        <td>{{ track.float_to_time }}</td>
+        <td>{{ track.album.artist.name }}</td>
+        <td>{{ track.album.name }}</td>
+    </tr>
+    {% endfor %}
+</table>
